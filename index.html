@@ -3,59 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application 6 Project Demo</title>
+    <title>Application 6 Project Demo | Victor Valentin</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #111827;
+            color: #f9fafb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             max-width: 900px;
-            margin: auto;
+            margin: 60px auto;
             padding: 30px;
-            line-height: 1.6;
-            text-align: center;
+        }
+
+        .card {
+            background-color: #1f2937;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.35);
         }
 
         h1 {
+            font-size: 2.5rem;
             margin-bottom: 10px;
         }
 
-        .video-container {
+        h2 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: #9ca3af;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.7;
             margin-top: 20px;
         }
 
-        iframe {
+        .video-container {
+            margin-top: 30px;
+            position: relative;
             width: 100%;
-            max-width: 800px;
-            height: 450px;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border: none;
         }
 
-        a {
+        .links {
+            margin-top: 30px;
+        }
+
+        .button {
             display: inline-block;
-            margin-top: 20px;
-            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: #2563eb;
+            padding: 12px 22px;
+            border-radius: 10px;
+            margin-right: 12px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #6b7280;
+            font-size: 0.9rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <h1>Application 6 Project Demo</h1>
+    <div class="container">
+        <div class="card">
 
-    <p>
-        This project demonstrates my Application 6 work.
-        It showcases the functionality, design decisions,
-        and overall system behavior.
-    </p>
+            <h1>Application 6 Project Demo</h1>
+            <h2>Embedded Systems / Real-Time Systems Project</h2>
 
-    <div class="video-container">
-        <iframe
-            src="https://www.youtube.com/embed/cS5LFSu0cB4"
-            allowfullscreen>
-        </iframe>
+            <p>
+                This project demonstrates the design and implementation of my
+                Application 6 system. The demo video below highlights the core
+                functionality, system behavior, and design objectives.
+            </p>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/cS5LFSu0cB4"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="links">
+                <a class="button"
+                   href="https://github.com/Victoooorv/application6-demo"
+                   target="_blank">
+                    View GitHub Repo
+                </a>
+
+                <a class="button"
+                   href="https://www.youtube.com/embed/cS5LFSu0cB4"
+                   target="_blank">
+                    Watch on YouTube
+                </a>
+            </div>
+
+            <footer>
+                Created by Victor Valentin • Spring 2026
+            </footer>
+
+        </div>
     </div>
-
-    <a href="https://github.com/Victoooorv/application6-demo">
-        View GitHub Repository
-    </a>
 
 </body>
 </html>
